@@ -1,0 +1,385 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* Header */
+header {
+  padding-bottom: 30px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+nav img {
+  height: 50px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 0 16px;
+}
+nav li a {
+  padding-top: 44px;
+}
+nav li a:hover {
+  border-top: 2px solid #0065fc;
+}
+
+/* @media (max-width: 768px) {
+  nav li a:hover {
+    border-bottom: 2px solid #0065fc;
+    text-decoration: none;
+    border-top: none;
+  }
+} */
+
+/* Deuxième bloc, Zone de recherche*/
+.zone_de_recherche h1 {
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.zone_de_recherche form .map {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px 0 0 10px;
+  background-color: #f2f2f2;
+  border: none;
+}
+input::placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.bouton {
+  background-color: #0065fc;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  width: 95px;
+  height: 40px;
+  border: none;
+}
+.case {
+  height: 40px;
+  border: 2px solid #f2f2f2;
+  padding-left: 20px;
+}
+/* Filtres */
+.containerFiltres {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  flex-flow: row wrap;
+}
+.containerFiltres .filtre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 40px;
+  padding-right: 12px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.filtre h3 {
+  margin: 0 10px;
+}
+.containerFiltres .filtre:hover {
+  background-color: #0065fc;
+  color: #f2f2f2;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.containerFiltres i {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information {
+  display: flex;
+  align-items: center;
+}
+.information i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  color: #0065fc;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* Section Hébergements à Marseille */
+.Hebergement_a_Marseille {
+  background-color: #f2f2f2;
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  height: 633px;
+}
+.Hebergement_a_Marseille h1 {
+  padding: 20px 0 0 20px;
+  font-size: 16px;
+}
+.container_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.container_cards .card {
+  width: 30%;
+  border: 4px solid white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: white;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container_cards .card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.container_cards .card img {
+  height: 110px;
+  width: 100%;
+  object-fit: cover;
+}
+.container_cards .card .cardtext {
+  font-size: 10px;
+  padding: 6px 0 6px 6px;
+}
+.container_cards .card .cardtext p {
+  padding: 6px 0;
+  font-size: larger;
+}
+.etoile {
+  color: #0065fc;
+}
+.Hebergement_a_Marseille p {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px;
+}
+.grey {
+  color: #c0bdbd;
+}
+/* Aside les plus populaires */
+.Les_plus_populaires {
+  background-color: #f2f2f2;
+  width: 30%;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px;
+}
+.Les_plus_populaires .entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Les_plus_populaires .entete h1 {
+  font-size: 16px;
+}
+.container_popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_popular .popular_card a {
+  display: flex;
+  width: 100%;
+  border: 4px solid white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: white;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container_popular .popular_card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.container_popular .popular_card img {
+  width: 50%;
+  height: 150px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.container_popular .popular_card .popularcardtext {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10px;
+}
+.container_popular .popular_card .popularcardtext h2 {
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+.container_popular .popular_card .popularcardtext p {
+  font-size: 10px;
+  font-weight: bold;
+}
+.container_popular .popular_card .popularcardtext .etoile {
+  font-size: 10px;
+  padding-top: 50px;
+}
+/* Activités à Marseille */
+.Activites_a_Marseille {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+  gap: 10px;
+}
+/* Bloc Vieux Port */
+.Activites_a_Marseille .vieux_port {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 85%;
+  border: 4px solid white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: white;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.Activites_a_Marseille .vieux_port:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.Activites_a_Marseille .vieux_port img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.Activites_a_Marseille .vieux_port h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
+/* bloc Fort de Pomègues */
+.Activites_a_Marseille .fort_de_pomegues {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 25%;
+  height: 40%;
+  border: 4px solid white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: white;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.Activites_a_Marseille .fort_de_pomegues:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.Activites_a_Marseille .fort_de_pomegues img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+}
+.Activites_a_Marseille .fort_de_pomegues h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
+/* Iles du frioul */
+.Activites_a_Marseille .iles_du_frioul {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 25%;
+  height: 40%;
+  border: 4px solid white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: white;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.Activites_a_Marseille .iles_du_frioul:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Activites_a_Marseille .iles_du_frioul img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+}
+.Activites_a_Marseille .iles_du_frioul h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
