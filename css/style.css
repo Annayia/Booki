@@ -506,7 +506,7 @@ footer li{
     grid-area: 1/1/2/4;
   }
   .Activites_a_Marseille {
-    padding: 32px;
+    padding: 64px 32px;
   }
   .Activites_a_Marseille h2 {
     margin-bottom: 32px;
