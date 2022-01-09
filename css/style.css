@@ -74,7 +74,6 @@ form {
 input::placeholder {
   color: black;
   font-weight: bold;
-  font-size: 16px;
 }
 .bouton {
   background-color: #0065fc;
