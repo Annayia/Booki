@@ -458,7 +458,7 @@ footer li{
     gap: 32px;
   }
 } 
-@media screen and (max-width:992px) {
+@media screen and (min-width:769px) and (max-width:992px) {
   main {
     grid-template-columns: 1fr;
   }
@@ -477,5 +477,4 @@ footer li{
   .Activites_a_Marseille h2 {
     margin-bottom: 32px;
   }
-  
 }
