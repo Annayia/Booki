@@ -246,7 +246,7 @@ aside img{
   overflow: hidden;
   box-shadow: 0 0 20px #0000002e;
 }
-.container_popular a:hover {
+aside a:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
