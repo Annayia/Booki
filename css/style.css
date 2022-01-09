@@ -28,7 +28,7 @@ img {
 }
 /* Header */
 header {
-  padding: 32px;
+  padding: 32px 0;
 }
 header nav {
   display: flex;
@@ -46,10 +46,10 @@ header nav ul li {
   margin: 0 16px;
 }
 header nav li a {
-  padding-top: 47px;
+  padding-top: 46px;
 }
 header a:hover {
-  border-top: 2px solid #0065fc;
+  border-top: 4px solid #0065fc;
 }
 
 /* Deuxième bloc, Zone de recherche*/
@@ -349,17 +349,25 @@ footer li{
   header nav ul {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding: 32px 0;
+    justify-content: space-evenly;
   }
   header nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 16px;
   }
-  header nav li a:hover {
-    border-bottom: 2px solid #0065fc;
+  header nav li {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header nav a:hover {
     border-top: none;
+  }
+  header nav li:hover {
+    border-bottom: 2px solid #0065fc;
   }
   .zone_de_recherche{
     display:flex;
