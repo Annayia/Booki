@@ -461,6 +461,7 @@ footer li{
 @media screen and (min-width:769px) and (max-width:992px) {
   main {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
   aside {
     grid-area: 1;
