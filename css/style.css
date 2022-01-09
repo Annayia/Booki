@@ -432,7 +432,6 @@ footer li{
   .Les_plus_populaires h2{
     display: flex;
     margin-top: 32px;
-    padding-left: 32px;
   }
   .Container_grid {
     grid-template-columns: 1fr;
