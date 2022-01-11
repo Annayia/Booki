@@ -12,9 +12,7 @@ a {
   text-decoration: none;
   color: black;
 }
-ul,
-ol,
-li {
+ul, ol, li {
   list-style: none;
 }
 body {
@@ -26,9 +24,11 @@ img {
   object-fit: cover;
   width: 100%;
 }
-/* Header */
+
+        /* Header Logo booki et menu de navigation*/
+
 header {
-  padding: 32px 0;
+  padding: 32px;
 }
 header nav {
   display: flex;
@@ -52,7 +52,8 @@ header a:hover {
   border-top: 4px solid #0065fc;
 }
 
-/* Deuxième bloc, Zone de recherche*/
+        /* Deuxième bloc, Zone de recherche avec input+bouton */
+
 .zone_de_recherche h1 {
   padding-bottom: 6px;
 }
@@ -92,14 +93,17 @@ input::placeholder {
   border: 2px solid #f2f2f2;
   padding-left: 5px;
 }
-/* Filtres */
+
+            /* Filtres:container des filtres + style des filtres */
+
+
 .containerFiltres {
   display: flex;
   align-items: center;
   gap: 20px;
   padding-bottom: 20px;
   flex-flow: row wrap;
-  padding: 16px 32px;
+  padding: 0 32px;
 }
 .containerFiltres .filtre {
   display: flex;
@@ -152,8 +156,10 @@ main {
  display: grid;
  grid-template-columns: 2fr 1fr;
  column-gap: 32px;
+ margin: 0 32px;
 }
-/* Section Hébergements à Marseille */
+      /* Section Hébergements à Marseille */
+
 main > section {
   background-color: #f2f2f2;
   border-radius: 16px;
@@ -172,6 +178,9 @@ section > .container_cards {
 main section h2 {
   margin-bottom: 16px;
 }
+
+          /* Défintion des cartes */
+
 .container_cards img{
   width: 100%;
   height: 144px;
@@ -198,6 +207,7 @@ a .cardtext {
   text-overflow: ellipsis;
   max-width: 100%;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 .cardtext h3, .cardtext p {
   white-space: nowrap;
@@ -257,11 +267,14 @@ aside a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+.popularcardtext p {
+  margin-top: -50px;
+}
 
 /* Activités à Marseille*/
 
 .Activites_a_Marseille h2 {
-  margin-top: 16px;
+  margin: 32px 0 0 32px;
 }
 .Container_grid {
   display: grid;
@@ -271,6 +284,7 @@ aside a:hover {
   object-fit: cover;
   width:100%;
   column-gap: 32px;
+  padding: 32px;
 }
 .Container_grid > article:nth-child(1) {
   grid-area: 1/1/6/2;
@@ -362,6 +376,7 @@ footer li{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 2px solid transparent;
   }
   header nav a:hover {
     border-top: none;
