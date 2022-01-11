@@ -50,6 +50,7 @@ header nav li a {
 }
 header a:hover {
   border-top: 4px solid #0065fc;
+  color: #0065fc;
 }
 
         /* Deuxième bloc, Zone de recherche avec input+bouton */
@@ -360,10 +361,14 @@ footer li{
     width:100%;
     margin: 0;
   }
+  header {
+    padding: 32px 0;
+  }
   header nav ul {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    
   }
   header nav img {
     display: flex;
@@ -376,14 +381,16 @@ footer li{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 2px solid transparent;
+    border: 2px solid transparent;
   }
   header nav a:hover {
     border-top: none;
+    color: #0065fc;
   }
   header nav li:hover {
     border-bottom: 2px solid #0065fc;
   }
+
   .zone_de_recherche{
     display:flex;
     flex-flow: column wrap;
@@ -482,6 +489,9 @@ footer li{
   .Les_plus_populaires h2{
     display: flex;
     margin-top: 32px;
+  }
+  .popularcardtext p {
+    margin-top: 0;
   }
   .Container_grid {
     grid-template-columns: 1fr;
