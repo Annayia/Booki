@@ -25,7 +25,7 @@ img {
   width: 100%;
 }
 
-        /* Header Logo booki et menu de navigation*/
+/*///////* Header Logo booki et menu de navigation*/
 
 header {
   padding: 32px;
@@ -53,7 +53,7 @@ header a:hover {
   color: #0065fc;
 }
 
-        /* Deuxième bloc, Zone de recherche avec input+bouton */
+/*//////* Deuxième bloc, Zone de recherche avec input+bouton */
 
 .zone_de_recherche h1 {
   padding-bottom: 6px;
@@ -95,7 +95,7 @@ input::placeholder {
   padding-left: 5px;
 }
 
-            /* Filtres:container des filtres + style des filtres */
+/*///////* Filtres:container des filtres + style des filtres */
 
 
 .containerFiltres {
@@ -159,7 +159,7 @@ main {
  column-gap: 32px;
  margin: 0 32px;
 }
-      /* Section Hébergements à Marseille */
+/*//////* Section Hébergements à Marseille */
 
 main > section {
   background-color: #f2f2f2;
@@ -180,7 +180,7 @@ main section h2 {
   margin-bottom: 16px;
 }
 
-          /* Défintion des cartes */
+/*////////* Défintion des cartes */
 
 .container_cards img{
   width: 100%;
@@ -222,7 +222,7 @@ a .cardtext {
 .grey {
   color: #d9D9D9;
 }
-      /* Aside Les plus populaires */
+/*///////* Aside Les plus populaires */
 aside {
   background-color: #f2f2f2;
   border-radius: 16px;
@@ -271,7 +271,7 @@ aside a:hover {
   margin-top: 45px;
 }
 
-/* Activités à Marseille*/
+/*/////////* Activités à Marseille*/
 
 .Activites_a_Marseille h2 {
   margin: 32px 0 0 32px;
@@ -334,7 +334,10 @@ aside a:hover {
   cursor: pointer;
 }
 
-/* Footer */
+/*/////////* Footer */
+footer {
+  margin: 0;
+}
 footer nav {
   width: 100%;
   display: flex;
