@@ -539,3 +539,8 @@ footer li{
     margin-bottom: 32px;
   }
 }
+@media screen and (max-width:320px) {
+  body {
+    margin: 0;
+  }
+}
