@@ -222,7 +222,7 @@ a .cardtext {
 .grey {
   color: #d9D9D9;
 }
-/* Aside Les plus populaires */
+      /* Aside Les plus populaires */
 aside {
   background-color: #f2f2f2;
   border-radius: 16px;
@@ -266,10 +266,9 @@ aside a:hover {
   padding:6px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-.popularcardtext p {
-  margin-top: -50px;
+.popularcardtext .etoile {
+  margin-top: 45px;
 }
 
 /* Activités à Marseille*/
