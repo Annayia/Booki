@@ -574,5 +574,9 @@ footer li{
 @media screen and (max-width:320px) {
   body {
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
   }
 }
