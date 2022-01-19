@@ -92,7 +92,8 @@ input::placeholder {
 .case {
   height: 40px;
   border: 2px solid #f2f2f2;
-  padding-left: 5px;
+  padding-left: 8px;
+  position: relative;
 }
 
 /*///////* Filtres:container des filtres + style des filtres */
@@ -208,7 +209,7 @@ a .cardtext {
   text-overflow: ellipsis;
   max-width: 100%;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
 }
 .cardtext h3, .cardtext p {
   white-space: nowrap;
@@ -248,6 +249,9 @@ aside img{
   border-radius: 16px 0 0 16px;
   position: absolute;
 }
+.popularcardtext> div> p> span {
+  font-weight: bold;
+}
 .popular_card {
   display:grid;
   grid-template-columns: 1fr 2fr;
@@ -263,13 +267,13 @@ aside a:hover {
   transition: 0.3s;
 }
 .popularcardtext {
-  padding:6px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
+  justify-content:space-between;
+  align-items: flex-start;
 }
-.popularcardtext .etoile {
-  margin-top: 45px;
-}
+
 
 /*/////////* Activités à Marseille*/
 
@@ -370,7 +374,6 @@ footer li{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    
   }
   header nav img {
     display: flex;
@@ -383,22 +386,35 @@ footer li{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
   }
   header nav a:hover {
     border-top: none;
     color: #0065fc;
   }
-  header nav li:hover {
-    border-bottom: 2px solid #0065fc;
+  header nav li a {
+    padding-bottom: 10px;
   }
-
+  header nav li:hover {
+    border-bottom: 3px solid #0065fc;
+  }
+  .case {
+    height: 50px;
+    width: 220px;
+    font-size: 16px;
+  }
+  .zone_de_recherche form .map {
+    height: 50px;
+    width:50px;
+    font-size: 20px;
+  }
+  
   .zone_de_recherche{
     display:flex;
     flex-flow: column wrap;
     justify-content: center;
-    padding: 0 32px;
   }
+
   .zone_de_recherche h1 {
     display: flex;
     justify-content: flex-start;
@@ -419,10 +435,11 @@ footer li{
   align-items:center;
   background-color: #0065fc;
   color: white;
-  border-radius: 0px 10px 10px 0px;
-  width: 40px;
-  height: 40px;
+  border-radius:0 16px 16px 0;
+  width: 50px;
+  height: 50px;
   border: none;
+  font-size: 16px;
   }
   .zone_de_recherche .bouton{
     display:none;
@@ -436,13 +453,16 @@ footer li{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 32px;
+    padding: 0 16px;
+    gap: 8px;
   }
   .information {
-    padding: 16px 32px;
+    padding: 16px 16px;
+    flex-flow: nowrap;
   }
   .containerFiltres h3 {
     width:100%;
+    padding-bottom: 6px;
   }
   main {
     display: flex;
@@ -485,16 +505,27 @@ footer li{
     margin:0;
     border-radius: 0;
   }
-  aside p {
-    margin-bottom: 32px;
-  }
+  
   .Les_plus_populaires h2{
     display: flex;
     margin-top: 32px;
   }
-  .popularcardtext p {
-    margin-top: 0;
+  .popularcardtext {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
   }
+  .popularcardtext> div h3{
+    font-size: 16px;
+  }
+  .popularcardtext> div p {
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
+  .popularcardtext .etoile {
+    font-size: 12px;
+  }
+
   .Container_grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 40vw);
