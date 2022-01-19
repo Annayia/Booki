@@ -400,7 +400,7 @@ footer li{
   }
   .case {
     height: 50px;
-    width: 220px;
+    width: 200px;
     font-size: 16px;
   }
   .zone_de_recherche form .map {
@@ -454,7 +454,7 @@ footer li{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0 16px;
-    gap: 8px;
+    gap: 6px;
   }
   .information {
     padding: 16px 16px;
