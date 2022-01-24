@@ -204,12 +204,11 @@ main section h2 {
   transition: 0.3s;
 }
 a .cardtext {
-  padding-left: 6px;
+  padding: 8px;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
   overflow: hidden;
-  padding-bottom: 6px;
 }
 .cardtext h3, .cardtext p {
   white-space: nowrap;
@@ -362,11 +361,10 @@ footer li{
 /* Responsive Design */
 @media screen and (max-width:768px) {
   body{
-    display: flex;
-    flex-flow: column wrap;
     width:100%;
     margin: 0;
     overflow-x: hidden;
+    font-size: 80%;
   }
   header {
     padding: 32px 0;
@@ -401,7 +399,7 @@ footer li{
   }
   .case {
     height: 50px;
-    width: 200px;
+    width: 225px;
     font-size: 16px;
   }
   .zone_de_recherche form .map {
@@ -436,11 +434,13 @@ footer li{
   align-items:center;
   background-color: #0065fc;
   color: white;
-  border-radius:0 16px 16px 0;
+  border-radius: 14px;
   width: 50px;
   height: 50px;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
+  position: relative;
+  right: 8px;
   }
   .zone_de_recherche .bouton{
     display:none;
@@ -500,11 +500,16 @@ footer li{
     display: flex;
     margin-left: 32px;
   }
-
+  .etoile {
+    font-size: smaller;
+    padding-top: 6px;
+  }
   aside {
     width:100%;
     margin:0;
     border-radius: 0;
+    padding: 16px;
+    row-gap: 16px;
   }
   
   .Les_plus_populaires h2{
@@ -531,12 +536,16 @@ footer li{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 40vw);
     gap: 32px;
+    padding: 0;
   }
   .Container_grid > article.container {
     grid-area: unset;
   }
   .Activites_a_Marseille {
     padding: 32px;
+  }
+  .Activites_a_Marseille h2 {
+    margin: 0;
   }
   footer {
     width: 100%;
