@@ -380,12 +380,13 @@ footer li{
     align-items: center;
     margin-left: 16px;
   }
-  header nav li {
-    width: 100%;
+  header nav ul > li {
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 3px solid transparent;
+    margin: 0;
+    border-bottom: 3px solid #f6f6f6;
   }
   header nav a:hover {
     border-top: none;
@@ -394,7 +395,7 @@ footer li{
   header nav li a {
     padding-bottom: 10px;
   }
-  header nav li:hover {
+  header nav  ul > li:hover {
     border-bottom: 3px solid #0065fc;
   }
   .case {
@@ -586,6 +587,7 @@ footer li{
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     overflow-x: hidden;
   }
   .zone_de_recherche {
